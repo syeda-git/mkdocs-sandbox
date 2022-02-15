@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://squidfunk.github.io/mkdocs-material-example-versioning/</loc>
-         <lastmod>2022-02-07</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://squidfunk.github.io/mkdocs-material-example-versioning/bar/</loc>
-         <lastmod>2022-02-07</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://squidfunk.github.io/mkdocs-material-example-versioning/foo/</loc>
-         <lastmod>2022-02-07</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://squidfunk.github.io/mkdocs-material-example-versioning/new/</loc>
-         <lastmod>2022-02-07</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
