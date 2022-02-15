@@ -1,36 +1,20 @@
+
+
 site_name: My Docs
-site_url: https://example.com/
+site_url: https://squidfunk.github.io/mkdocs-material-example-versioning/
+site_author: Martin Donath
 
-theme: 
-    name: material
-    custom_dir: overrides
+# Repository
+repo_name: syeda-git/mkdocs-sandbox
+repo_url: https://github.com/syeda-git/mkdocs-sandbox
+edit_uri: ""
 
-plugins:
-    - search
-    - include-markdown
-    - macros
+# Configuration
+theme:
+  name: material
+  custom_dir: overrides
 
+# Customization
 extra:
-    prodname: HCL Volt MX
-    os: linux
-
-extra_css:
-  - stylesheets/ssg-style.css
-  
-markdown_extensions:
-    - pymdownx.caret
-    - pymdownx.details
-    
-nav:
-    - 'Introduction': 
-        - About:    mydoc_about.md
-        - Overview: mydoc_introduction.md
-    - Topic1: topic1.md
-    - Topic2: topic2.md
-    - REST APIs: REST_APIs.md
-    - Access: Access_Management_General\Access_Management.md
-    - Popups Metrics: Access_Management_General\Guidelines_for_Pop-up_s_or_Alerts.md
-    - Standard Metrics: Access_Management_General\StandardMetrics.md
-    - Custom Metrics: Implementing_Custom_Metrics_in_VoltMX_Iris.md
-    
-  
+  version:
+    provider: mike
