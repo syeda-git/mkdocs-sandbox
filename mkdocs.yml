@@ -1,7 +1,7 @@
 
 
 site_name: My Docs
-site_url: https://squidfunk.github.io/mkdocs-material-example-versioning/
+site_url: https://example.com
 site_author: Martin Donath
 
 # Repository
@@ -13,8 +13,19 @@ edit_uri: ""
 theme:
   name: material
   custom_dir: overrides
+  language: en
 
 # Customization
 extra:
-  version:
-    provider: mike
+    version:
+        provider: mike
+    alternate:
+        - name: English
+          link: /mkdocs-sandbox/9.5/
+          link: /mkdocs-sandbox/10.0/
+          lang: en
+     
+        - name: Francais
+          link: /mkdocs-sandbox/9.5/fr/
+          link: /mkdocs-sandbox/10.0/fr/
+          lang: fr  
