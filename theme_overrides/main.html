@@ -1,0 +1,29 @@
+<!-- Elements added to main will be displayed on all pages -->
+{% extends "base.html" %}
+{% block outdated %}
+  You're not viewing the latest version.
+  <a href="{{ '../' ~ base_url }}"> 
+    <strong>Click here to go to latest.</strong>
+  </a>
+{% endblock %}
+
+
+{% block announce %}
+
+   <a href="https://www.hcltechsw.com/"> 
+  <img width="150" height="50" src="https://help.hcltechsw.com/assets/images/HCL_Software_Logo_White.svg" alt="HCL Logo" target="_blank"></a>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div class="dropdown">
+  <button class="dropbtn">Resources <i class="fa fa-caret-down"></i></button> 
+  <div class="dropdown-content">
+  <a href="https://support.hcltechsw.com" target="_blank">Customer Support</a>
+  <a href="https://academy.hcltechsw.com" target="_blank">Software Academy</a>
+
+</div>
+{% endblock %}
+
+{% block extrahead %}
+  <meta property="og:image" content="https://opensource.hcltechsw.com/digital-experience/site-thumbnail.png" />
+{% endblock %}
+

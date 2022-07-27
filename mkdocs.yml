@@ -1,31 +1,76 @@
+#Project Information
+site_name: HCL product name Help Center
+site_description: >-
+  A next-gen documentation site for HCL <product name>.
+site_url: https://opensource.hcltechsw.com/product-name
 
-
-site_name: My Docs
-site_url: https://example.com
-site_author: Martin Donath
-
-# Repository
-repo_name: syeda-git/mkdocs-sandbox
-repo_url: https://github.com/syeda-git/mkdocs-sandbox
-edit_uri: ""
-
-# Configuration
+# Theme Configuration
 theme:
   name: material
-  custom_dir: overrides
+  logo: assets/logo.png
+  favicon: assets/favicon.png
   language: en
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+    - navigation.instant
+    - search.highlight
+    - search.share
+    - search.suggest
+  custom_dir: theme_overrides/
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+
+  # Static files
+  static_templates:
+    - 404.html
+
+
+# Markdown Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/HCL-TECH-SOFTWARE
+  version:
+    provider: mike
+  
+  consent:
+    title: Cookie consent
+    description: Hey there! Welcome to my cookie consent banner.
+  
+
+
+ # analytics:
+  #  provider: google
+   # property: UA-169645537-2
+
+# Repository
+repo_url: https://github.com/HCL-TECH-SOFTWARE/digital-experience
+repo_name: hcl-software/digital-experience
+edit_uri: edit/main/docs
+
 
 # Customization
-extra:
-    version:
-        provider: mike
-    alternate:
-        - name: English
-          link: /mkdocs-sandbox/9.5/
-          link: /mkdocs-sandbox/10.0/
-          lang: en
-     
-        - name: Francais
-          link: /mkdocs-sandbox/9.5/fr/
-          link: /mkdocs-sandbox/10.0/fr/
-          lang: fr  
+extra_css:
+  - stylesheets/style.css
+
+plugins:
+  - search
+  
+ #Table of contents 
+nav:
+  - Home: index.md
+  - About:   
+     - Overview: introduction.md
+  - Notices: notices.md
