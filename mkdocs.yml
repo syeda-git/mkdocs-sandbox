@@ -48,7 +48,13 @@ extra:
   consent:
     title: Cookie consent
     description: Hey there! Welcome to my cookie consent banner.
-  
+    cookies:
+      analytics: 
+        provider: google
+        property: UA-169645537-2
+    actions:
+        - accept
+        - manage
 
 
  # analytics:
