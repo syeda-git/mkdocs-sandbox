@@ -53,12 +53,6 @@ extra:
       link: https://github.com/HCL-TECH-SOFTWARE
   version:
     provider: mike
-  
-  
-    cookies:
-      
-    
-
 
  # analytics:
   #  provider: google
