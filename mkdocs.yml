@@ -39,22 +39,25 @@ markdown_extensions:
   - attr_list
 
 extra:
+  analytics: 
+    provider: google
+    property: UA-169645537-2
+  consent:
+    title: Cookie consent
+    description: Hey there! Welcome to my cookie consent banner.
+    actions:
+        - accept
+        - manage
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/HCL-TECH-SOFTWARE
   version:
     provider: mike
   
-  consent:
-    title: Cookie consent
-    description: Hey there! Welcome to my cookie consent banner.
+  
     cookies:
-      analytics: 
-        provider: google
-        property: UA-169645537-2
-    actions:
-        - accept
-        - manage
+      
+    
 
 
  # analytics:
